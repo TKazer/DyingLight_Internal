@@ -1,0 +1,284 @@
+﻿  Function.cpp
+E:\Project\DyingLight_Internal\DyingLight_Internal\Bytes.hpp(152,26): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Function.cpp(22,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Function.cpp(24,47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Function.cpp(25,49): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Function.cpp(45,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Function.cpp(56,89): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Function.cpp(57,89): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Function.cpp(77,31): warning C4267: “初始化”: 从“size_t”转换到“INT”，可能丢失数据
+  Memory.cpp
+E:\Project\DyingLight_Internal\DyingLight_Internal\Bytes.hpp(152,26): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(40,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(48,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(58,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(67,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(75,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(83,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(97,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(109,33): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(109,89): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(122,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(130,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+  Object.cpp
+E:\Project\DyingLight_Internal\DyingLight_Internal\Bytes.hpp(152,26): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(40,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(48,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(58,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(67,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(75,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(83,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(97,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(109,33): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(109,89): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(122,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(130,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+  Render.cpp
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(12,1): warning C4005: “DXGI_STATUS_OCCLUDED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56388): message : 参见“DXGI_STATUS_OCCLUDED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(13,1): warning C4005: “DXGI_STATUS_CLIPPED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56397): message : 参见“DXGI_STATUS_CLIPPED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(14,1): warning C4005: “DXGI_STATUS_NO_REDIRECTION”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56406): message : 参见“DXGI_STATUS_NO_REDIRECTION”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(15,1): warning C4005: “DXGI_STATUS_NO_DESKTOP_ACCESS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56415): message : 参见“DXGI_STATUS_NO_DESKTOP_ACCESS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(16,1): warning C4005: “DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56424): message : 参见“DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(17,1): warning C4005: “DXGI_STATUS_MODE_CHANGED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56433): message : 参见“DXGI_STATUS_MODE_CHANGED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(18,1): warning C4005: “DXGI_STATUS_MODE_CHANGE_IN_PROGRESS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56442): message : 参见“DXGI_STATUS_MODE_CHANGE_IN_PROGRESS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(21,1): warning C4005: “DXGI_ERROR_INVALID_CALL”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56457): message : 参见“DXGI_ERROR_INVALID_CALL”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(22,1): warning C4005: “DXGI_ERROR_NOT_FOUND”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56466): message : 参见“DXGI_ERROR_NOT_FOUND”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(23,1): warning C4005: “DXGI_ERROR_MORE_DATA”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56475): message : 参见“DXGI_ERROR_MORE_DATA”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(24,1): warning C4005: “DXGI_ERROR_UNSUPPORTED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56484): message : 参见“DXGI_ERROR_UNSUPPORTED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(25,1): warning C4005: “DXGI_ERROR_DEVICE_REMOVED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56493): message : 参见“DXGI_ERROR_DEVICE_REMOVED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(26,1): warning C4005: “DXGI_ERROR_DEVICE_HUNG”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56502): message : 参见“DXGI_ERROR_DEVICE_HUNG”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(27,1): warning C4005: “DXGI_ERROR_DEVICE_RESET”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56512): message : 参见“DXGI_ERROR_DEVICE_RESET”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(28,1): warning C4005: “DXGI_ERROR_WAS_STILL_DRAWING”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56521): message : 参见“DXGI_ERROR_WAS_STILL_DRAWING”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(29,1): warning C4005: “DXGI_ERROR_FRAME_STATISTICS_DISJOINT”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56531): message : 参见“DXGI_ERROR_FRAME_STATISTICS_DISJOINT”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(30,1): warning C4005: “DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56540): message : 参见“DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(31,1): warning C4005: “DXGI_ERROR_DRIVER_INTERNAL_ERROR”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56550): message : 参见“DXGI_ERROR_DRIVER_INTERNAL_ERROR”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(32,1): warning C4005: “DXGI_ERROR_NONEXCLUSIVE”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56559): message : 参见“DXGI_ERROR_NONEXCLUSIVE”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(33,1): warning C4005: “DXGI_ERROR_NOT_CURRENTLY_AVAILABLE”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56568): message : 参见“DXGI_ERROR_NOT_CURRENTLY_AVAILABLE”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(34,1): warning C4005: “DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56578): message : 参见“DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(35,1): warning C4005: “DXGI_ERROR_REMOTE_OUTOFMEMORY”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56587): message : 参见“DXGI_ERROR_REMOTE_OUTOFMEMORY”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(917,1): warning C4005: “D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56865): message : 参见“D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(918,1): warning C4005: “D3D11_ERROR_FILE_NOT_FOUND”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56874): message : 参见“D3D11_ERROR_FILE_NOT_FOUND”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(919,1): warning C4005: “D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56884): message : 参见“D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(920,1): warning C4005: “D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56893): message : 参见“D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(608,1): warning C4005: “D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56841): message : 参见“D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(609,1): warning C4005: “D3D10_ERROR_FILE_NOT_FOUND”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56850): message : 参见“D3D10_ERROR_FILE_NOT_FOUND”的前一个定义
+E:\Project\DyingLight_Internal\DyingLight_Internal\Bytes.hpp(152,26): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(40,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(48,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(58,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(67,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(75,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(83,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(97,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(109,33): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(109,89): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(122,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(130,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\Render.cpp(10,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Render.cpp(12,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Render.cpp(15,43): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Render.cpp(40,66): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Render.cpp(64,50): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Render.cpp(82,16): warning C4305: “-=”: 从“double”到“float”截断
+E:\Project\DyingLight_Internal\DyingLight_Internal\Render.cpp(83,28): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Render.cpp(123,64): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  dllmain.cpp
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(12,1): warning C4005: “DXGI_STATUS_OCCLUDED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56388): message : 参见“DXGI_STATUS_OCCLUDED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(13,1): warning C4005: “DXGI_STATUS_CLIPPED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56397): message : 参见“DXGI_STATUS_CLIPPED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(14,1): warning C4005: “DXGI_STATUS_NO_REDIRECTION”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56406): message : 参见“DXGI_STATUS_NO_REDIRECTION”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(15,1): warning C4005: “DXGI_STATUS_NO_DESKTOP_ACCESS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56415): message : 参见“DXGI_STATUS_NO_DESKTOP_ACCESS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(16,1): warning C4005: “DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56424): message : 参见“DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(17,1): warning C4005: “DXGI_STATUS_MODE_CHANGED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56433): message : 参见“DXGI_STATUS_MODE_CHANGED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(18,1): warning C4005: “DXGI_STATUS_MODE_CHANGE_IN_PROGRESS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56442): message : 参见“DXGI_STATUS_MODE_CHANGE_IN_PROGRESS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(21,1): warning C4005: “DXGI_ERROR_INVALID_CALL”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56457): message : 参见“DXGI_ERROR_INVALID_CALL”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(22,1): warning C4005: “DXGI_ERROR_NOT_FOUND”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56466): message : 参见“DXGI_ERROR_NOT_FOUND”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(23,1): warning C4005: “DXGI_ERROR_MORE_DATA”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56475): message : 参见“DXGI_ERROR_MORE_DATA”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(24,1): warning C4005: “DXGI_ERROR_UNSUPPORTED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56484): message : 参见“DXGI_ERROR_UNSUPPORTED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(25,1): warning C4005: “DXGI_ERROR_DEVICE_REMOVED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56493): message : 参见“DXGI_ERROR_DEVICE_REMOVED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(26,1): warning C4005: “DXGI_ERROR_DEVICE_HUNG”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56502): message : 参见“DXGI_ERROR_DEVICE_HUNG”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(27,1): warning C4005: “DXGI_ERROR_DEVICE_RESET”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56512): message : 参见“DXGI_ERROR_DEVICE_RESET”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(28,1): warning C4005: “DXGI_ERROR_WAS_STILL_DRAWING”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56521): message : 参见“DXGI_ERROR_WAS_STILL_DRAWING”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(29,1): warning C4005: “DXGI_ERROR_FRAME_STATISTICS_DISJOINT”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56531): message : 参见“DXGI_ERROR_FRAME_STATISTICS_DISJOINT”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(30,1): warning C4005: “DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56540): message : 参见“DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(31,1): warning C4005: “DXGI_ERROR_DRIVER_INTERNAL_ERROR”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56550): message : 参见“DXGI_ERROR_DRIVER_INTERNAL_ERROR”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(32,1): warning C4005: “DXGI_ERROR_NONEXCLUSIVE”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56559): message : 参见“DXGI_ERROR_NONEXCLUSIVE”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(33,1): warning C4005: “DXGI_ERROR_NOT_CURRENTLY_AVAILABLE”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56568): message : 参见“DXGI_ERROR_NOT_CURRENTLY_AVAILABLE”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(34,1): warning C4005: “DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56578): message : 参见“DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(35,1): warning C4005: “DXGI_ERROR_REMOTE_OUTOFMEMORY”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56587): message : 参见“DXGI_ERROR_REMOTE_OUTOFMEMORY”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(917,1): warning C4005: “D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56865): message : 参见“D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(918,1): warning C4005: “D3D11_ERROR_FILE_NOT_FOUND”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56874): message : 参见“D3D11_ERROR_FILE_NOT_FOUND”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(919,1): warning C4005: “D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56884): message : 参见“D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(920,1): warning C4005: “D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56893): message : 参见“D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(608,1): warning C4005: “D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56841): message : 参见“D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”的前一个定义
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(609,1): warning C4005: “D3D10_ERROR_FILE_NOT_FOUND”: 宏重定义
+F:\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(56850): message : 参见“D3D10_ERROR_FILE_NOT_FOUND”的前一个定义
+E:\Project\DyingLight_Internal\DyingLight_Internal\ImGuiHook.hpp(119,101): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\ImGuiHook.hpp(123,93): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\ImGuiHook.hpp(125,93): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\ImGuiHook.hpp(143,92): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\ImGuiHook.hpp(145,92): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Bytes.hpp(152,26): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(40,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(48,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(58,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(67,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(75,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(83,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\ModelObject.h(97,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(109,33): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(109,89): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(122,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\Engine.h(130,1): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+E:\Project\DyingLight_Internal\DyingLight_Internal\MenuConfig.h(12,53): warning C4305: “初始化”: 从“double”到“float”截断
+E:\Project\DyingLight_Internal\DyingLight_Internal\MenuConfig.h(13,46): warning C4305: “初始化”: 从“double”到“float”截断
+E:\Project\DyingLight_Internal\DyingLight_Internal\MenuConfig.h(14,52): warning C4305: “初始化”: 从“double”到“float”截断
+E:\Project\DyingLight_Internal\DyingLight_Internal\MenuConfig.h(15,50): warning C4305: “初始化”: 从“double”到“float”截断
+E:\Project\DyingLight_Internal\DyingLight_Internal\Menu.hpp(69,41): warning C4244: “=”: 从“LONG”转换到“float”，可能丢失数据
+E:\Project\DyingLight_Internal\DyingLight_Internal\Menu.hpp(70,41): warning C4244: “=”: 从“LONG”转换到“float”，可能丢失数据
+Function.obj : warning LNK4006: "public: void __cdecl Bytes::Print(void)" (?Print@Bytes@@QEAAXXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: unsigned char * __cdecl Bytes::GetData(void)" (?GetData@Bytes@@QEAAPEAEXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: class Bytes __cdecl Bytes::Get(int,int)" (?Get@Bytes@@QEAA?AV1@HH@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: int __cdecl Bytes::Find(class Bytes,int)" (?Find@Bytes@@QEAAHV1@H@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: bool __cdecl Bytes::Replace(int,int,class Bytes)" (?Replace@Bytes@@QEAA_NHHV1@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: int __cdecl Bytes::Length(void)" (?Length@Bytes@@QEAAHXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: class Bytes & __cdecl Bytes::Add(unsigned char)" (?Add@Bytes@@QEAAAEAV1@E@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Bytes@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(__int64 const &)" (??0Bytes@@QEAA@AEB_J@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(int const &)" (??0Bytes@@QEAA@AEBH@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(class std::initializer_list<unsigned char>)" (??0Bytes@@QEAA@V?$initializer_list@E@std@@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Function.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(unsigned char const *,unsigned __int64)" (??0Bytes@@QEAA@PEBE_K@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "class Game * pGame" (?pGame@@3PEAVGame@@EA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "class GameData * pGameData" (?pGameData@@3PEAVGameData@@EA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "bool Memory::BulletLockFlag" (?BulletLockFlag@Memory@@3_NA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "bool Memory::LockHealthFlag" (?LockHealthFlag@Memory@@3_NA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "unsigned char * Memory::OldHealthBytes" (?OldHealthBytes@Memory@@3PAEA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "unsigned char * Memory::OldBulletBytes" (?OldBulletBytes@Memory@@3PAEA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: bool __cdecl Game::CheckAllPtr(void)" (?CheckAllPtr@Game@@QEAA_NXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: void __cdecl Game::Update(void)" (?Update@Game@@QEAAXXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: __cdecl GameData::GameData(void)" (??0GameData@@QEAA@XZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: void __cdecl Bytes::Print(void)" (?Print@Bytes@@QEAAXXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: unsigned char * __cdecl Bytes::GetData(void)" (?GetData@Bytes@@QEAAPEAEXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: class Bytes __cdecl Bytes::Get(int,int)" (?Get@Bytes@@QEAA?AV1@HH@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: int __cdecl Bytes::Find(class Bytes,int)" (?Find@Bytes@@QEAAHV1@H@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: bool __cdecl Bytes::Replace(int,int,class Bytes)" (?Replace@Bytes@@QEAA_NHHV1@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: int __cdecl Bytes::Length(void)" (?Length@Bytes@@QEAAHXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: class Bytes & __cdecl Bytes::Add(unsigned char)" (?Add@Bytes@@QEAAAEAV1@E@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Bytes@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(__int64 const &)" (??0Bytes@@QEAA@AEB_J@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(int const &)" (??0Bytes@@QEAA@AEBH@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(class std::initializer_list<unsigned char>)" (??0Bytes@@QEAA@V?$initializer_list@E@std@@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Memory.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(unsigned char const *,unsigned __int64)" (??0Bytes@@QEAA@PEBE_K@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "class GameData * pGameData" (?pGameData@@3PEAVGameData@@EA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: void __cdecl Bytes::Print(void)" (?Print@Bytes@@QEAAXXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: unsigned char * __cdecl Bytes::GetData(void)" (?GetData@Bytes@@QEAAPEAEXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: class Bytes __cdecl Bytes::Get(int,int)" (?Get@Bytes@@QEAA?AV1@HH@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: int __cdecl Bytes::Find(class Bytes,int)" (?Find@Bytes@@QEAAHV1@H@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: bool __cdecl Bytes::Replace(int,int,class Bytes)" (?Replace@Bytes@@QEAA_NHHV1@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: int __cdecl Bytes::Length(void)" (?Length@Bytes@@QEAAHXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: class Bytes & __cdecl Bytes::Add(unsigned char)" (?Add@Bytes@@QEAAAEAV1@E@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Bytes@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(__int64 const &)" (??0Bytes@@QEAA@AEB_J@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(int const &)" (??0Bytes@@QEAA@AEBH@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(class std::initializer_list<unsigned char>)" (??0Bytes@@QEAA@V?$initializer_list@E@std@@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(unsigned char const *,unsigned __int64)" (??0Bytes@@QEAA@PEBE_K@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Object.obj : warning LNK4006: "public: __cdecl GameData::GameData(void)" (??0GameData@@QEAA@XZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+OwnImGui.obj : warning LNK4006: "class OwnImGui Gui" (?Gui@@3VOwnImGui@@A) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class Game * pGame" (?pGame@@3PEAVGame@@EA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class OwnImGui Gui" (?Gui@@3VOwnImGui@@A) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class GameData * pGameData" (?pGameData@@3PEAVGameData@@EA) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class std::list<class std::list<unsigned long,class std::allocator<unsigned long> >,class std::allocator<class std::list<unsigned long,class std::allocator<unsigned long> > > > Bone::Single::List" (?List@Single@Bone@@3V?$list@V?$list@KV?$allocator@K@std@@@std@@V?$allocator@V?$list@KV?$allocator@K@std@@@std@@@2@@std@@A) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::Trunk" (?Trunk@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::RightLeg" (?RightLeg@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::LeftLeg" (?LeftLeg@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::RightArm" (?RightArm@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::LeftArm" (?LeftArm@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: bool __cdecl Game::CheckAllPtr(void)" (?CheckAllPtr@Game@@QEAA_NXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: void __cdecl Game::Update(void)" (?Update@Game@@QEAAXXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: void __cdecl Bytes::Print(void)" (?Print@Bytes@@QEAAXXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: unsigned char * __cdecl Bytes::GetData(void)" (?GetData@Bytes@@QEAAPEAEXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: class Bytes __cdecl Bytes::Get(int,int)" (?Get@Bytes@@QEAA?AV1@HH@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: int __cdecl Bytes::Find(class Bytes,int)" (?Find@Bytes@@QEAAHV1@H@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: bool __cdecl Bytes::Replace(int,int,class Bytes)" (?Replace@Bytes@@QEAA_NHHV1@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: int __cdecl Bytes::Length(void)" (?Length@Bytes@@QEAAHXZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: class Bytes & __cdecl Bytes::Add(unsigned char)" (?Add@Bytes@@QEAAAEAV1@E@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Bytes@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(__int64 const &)" (??0Bytes@@QEAA@AEB_J@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(int const &)" (??0Bytes@@QEAA@AEBH@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(class std::initializer_list<unsigned char>)" (??0Bytes@@QEAA@V?$initializer_list@E@std@@@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: __cdecl Bytes::Bytes(unsigned char const *,unsigned __int64)" (??0Bytes@@QEAA@PEBE_K@Z) 已在 dllmain.obj 中定义；已忽略第二个定义
+Render.obj : warning LNK4006: "public: __cdecl GameData::GameData(void)" (??0GameData@@QEAA@XZ) 已在 dllmain.obj 中定义；已忽略第二个定义
+E:\Project\DyingLight_Internal\x64\Release\DyingLight_Internal.dll : warning LNK4088: 因 /FORCE 选项生成了映像；映像可能不能运行
+  正在生成代码
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+E:\Project\DyingLight_Internal\DyingLight_Internal\DirectXHook\DirectXHook.cpp(180): warning C4715: “DirectXHook::Init”: 不是所有的控件路径都返回值
+E:\Project\DyingLight_Internal\DyingLight_Internal\ImGuiHook.hpp(133): warning C4715: “imgui_hook::Init_DX11”: 不是所有的控件路径都返回值
+  All 1900 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+* CIL library *(* CIL module *) : warning LNK4006: "class GameData * pGameData" (?pGameData@@3PEAVGameData@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class Game * pGame" (?pGame@@3PEAVGame@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class GameData * pGameData" (?pGameData@@3PEAVGameData@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class OwnImGui Gui" (?Gui@@3VOwnImGui@@A) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class Game * pGame" (?pGame@@3PEAVGame@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class std::list<class std::list<unsigned long,class std::allocator<unsigned long> >,class std::allocator<class std::list<unsigned long,class std::allocator<unsigned long> > > > Bone::Single::List" (?List@Single@Bone@@3V?$list@V?$list@KV?$allocator@K@std@@@std@@V?$allocator@V?$list@KV?$allocator@K@std@@@std@@@2@@std@@A) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::Trunk" (?Trunk@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::RightLeg" (?RightLeg@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::LeftLeg" (?LeftLeg@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::RightArm" (?RightArm@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "class std::list<unsigned long,class std::allocator<unsigned long> > Bone::Single::LeftArm" (?LeftArm@Single@Bone@@3V?$list@KV?$allocator@K@std@@@std@@A) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+E:\Project\DyingLight_Internal\x64\Release\DyingLight_Internal.dll : warning LNK4088: 因 /FORCE 选项生成了映像；映像可能不能运行
+  DyingLight_Internal.vcxproj -> E:\Project\DyingLight_Internal\x64\Release\DyingLight_Internal.dll
