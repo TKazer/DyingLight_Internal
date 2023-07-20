@@ -42,7 +42,7 @@ namespace Function
 	}
 
 	template <typename Type>
-	void Write(DWORD64 Address, Type Value,int Size)
+	void Write(DWORD64 Address, Type& Value,int Size)
 	{
 		memcpy_s(reinterpret_cast<PVOID>(Address), Size, &Value, Size);
 	}
@@ -65,6 +65,25 @@ namespace Function
 	bool BadWritePtr(Type Ptr,int Size)
 	{
 		return (bool)(IsBadHugeWritePtr(reinterpret_cast<PVOID>(Ptr), Size) || (DWORD64)Ptr < 0xFFFF || (DWORD64)Ptr > 0x7FFFFFFFFFFF);
+	}
+
+	template <typename Type>
+	Type LocateAddress(DWORD64 Address,size_t Size, std::initializer_list<int> OffsetList)
+	{
+		Type Buffer = Type{};
+		DWORD TempAddress = Address;
+		for (auto Offset = OffsetList.begin(); Offset != OffsetList.end(); ++Offset)
+		{
+			if (Offset == OffsetList.end() - 1)
+			{
+				memcpy_s(&Buffer, Size, reinterpret_cast<PVOID>(TempAddress + *Offset), Size);
+			}
+			else
+			{
+				TempAddress = *reinterpret_cast<DWORD64*>(TempAddress + *Offset);
+			}
+		}
+		return Buffer;
 	}
 
 	template <typename Type>

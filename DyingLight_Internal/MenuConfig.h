@@ -21,7 +21,7 @@ namespace MenuConfig
 
 	static bool BulletTrack = false;
 
-	static bool LockHealth = true;
+	static bool LockHealth = false;
 	static bool LockBullet = false;
 
 	static bool SpeedUp = false;

@@ -1,7 +1,6 @@
 #pragma once
 #include <windows.h>
 #include "Engine.h"
-#include "Function.h"
 
 class Game
 {

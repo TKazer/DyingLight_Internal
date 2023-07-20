@@ -2,7 +2,7 @@
 
 void Memory::LockHealth()
 {
-	DWORD64 HealthAddress = pGameData->Module_GameDLL + 0xBA6424;
+	DWORD64 HealthAddress = pGameData->Module_GameDLL + 0x9FB160;
 	byte ShellCode[]{ 0x90,0x90 ,0x90 ,0x90 ,0x90 ,0x90 ,0x90 ,0x90 };
 	DWORD OldProtect = 0;
 	VirtualProtect((LPVOID)HealthAddress, 8 * sizeof(byte), PAGE_EXECUTE_READWRITE, &OldProtect);
@@ -15,13 +15,27 @@ void Memory::LockHealth()
 
 void Memory::UnLockHealth()
 {
-	DWORD64 HealthAddress = pGameData->Module_GameDLL + 0xBA6424;
-	Function::Write(HealthAddress, OldHealthBytes, 8 * sizeof(byte));
+	DWORD64 HealthAddress = pGameData->Module_GameDLL + 0x9FB160;
+	Function::Write(HealthAddress, *OldHealthBytes, 8 * sizeof(byte));
+}
+
+
+void Memory::SetAmmo(Engine::InventoryContainerDI* pInventoryContainerDI,DWORD Count)
+{
+	if (pInventoryContainerDI)
+	{
+		auto InventoryAmmo_ = pInventoryContainerDI->InventoryAmmo_;
+		InventoryAmmo_->InventoryList.pItems[0].Ammo = 0;
+		for (int i = 0; i < InventoryAmmo_->InventoryList.ItemCount; i++)
+		{
+			InventoryAmmo_->InventoryList.At(i).Ammo = Count;
+		}
+	}
 }
 
 void Memory::LockBullet()
 {
-	DWORD64 BulletAddress = pGameData->Module_GameDLL + 0xD993DF;
+	DWORD64 BulletAddress = pGameData->Module_GameDLL + 0xDA168F;
 	byte ShellCode[]{ 0x90,0x90 ,0x90 ,0x90 ,0x90 };
 	DWORD OldProtect = 0;
 	VirtualProtect((LPVOID)BulletAddress, 5 * sizeof(byte), PAGE_EXECUTE_READWRITE, &OldProtect);
@@ -34,7 +48,7 @@ void Memory::LockBullet()
 
 void Memory::UnLockBullet()
 {
-	DWORD64 BulletAddress = pGameData->Module_GameDLL + 0xD993DF;
+	DWORD64 BulletAddress = pGameData->Module_GameDLL + 0xDA168F;
 	Function::Write(BulletAddress, OldBulletBytes, 5 * sizeof(byte));
 }
 
@@ -96,4 +110,36 @@ void Memory::SetTime(float Time)
 	{
 		*reinterpret_cast<float*>(TimeAddress) = Time;
 	}
+}
+
+LONG NTAPI Handler(struct _EXCEPTION_POINTERS* ExceptionInfo)
+{
+	if (ExceptionInfo->ExceptionRecord->ExceptionCode == EXCEPTION_SINGLE_STEP)
+	{
+		if ((DWORD64)ExceptionInfo->ExceptionRecord->ExceptionAddress == Memory::BulletTrackAddress)
+		{
+			DWORD64 rcx = ExceptionInfo->ContextRecord->Rcx;
+			*(Vec3*)(rcx + 0x60) = Memory::BulletTrackPos;
+			ExceptionInfo->ContextRecord->Rip += 3;
+		}
+		return EXCEPTION_CONTINUE_EXECUTION;
+	}
+	return EXCEPTION_CONTINUE_SEARCH;
+}
+
+void Memory::InitBulletTrackHook()
+{
+	BulletTrackPos = { 0.f,0.f,0.f };
+	BulletTrackAddress = pGameData->Module_GameDLL + 0x71283f;
+	BulletTrackHook.Hook({ BulletTrackAddress }, Handler);
+}
+
+void Memory::UnHookBulletTrack()
+{
+	BulletTrackHook.UnHook();
+}
+
+void Memory::SetBulletTrackPos(Vec3 Pos)
+{
+	BulletTrackPos = Pos;
 }

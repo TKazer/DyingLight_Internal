@@ -4,6 +4,7 @@
 #include "Game.h"
 #include "Object.h"
 #include "Bone.h"
+#include "Function.h"
 
 namespace Render
 {

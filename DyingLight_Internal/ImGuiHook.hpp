@@ -243,6 +243,7 @@ DWORD WINAPI imgui_hook::MainThread(LPVOID lpReserved)
 		if (imgui_hook::get().FreeDll)
 		{
 			FreeLibraryAndExitThread((HMODULE)lpReserved, 0);
+			return 1;
 		}
 	}
 	return 1;

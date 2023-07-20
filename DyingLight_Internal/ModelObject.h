@@ -1,6 +1,7 @@
 #pragma once
+#define _USE_MATH_DEFINES
 #include "GameData.h"
-#include "Function.h"
+#include <math.h>
 
 namespace Engine
 {
@@ -14,6 +15,27 @@ namespace Engine
 		T* At(int index)
 		{
 			return reinterpret_cast<T*>(this->pItems[index]);
+		}
+		int Size()
+		{
+			return this->ItemCount;
+		}
+		int MaxSize()
+		{
+			return this->ItemMaxCount;
+		}
+	};
+
+	template <typename T>
+	class List
+	{
+	public:
+		T* pItems;
+		DWORD ItemCount;
+		DWORD ItemMaxCount;
+		T& At(int index)
+		{
+			return pItems[index];
 		}
 		int Size()
 		{

@@ -17,6 +17,28 @@ namespace Engine
         class CLevel* Level;
     };
 
+    class Inventory
+    {
+    public:
+        DWORD ID;
+        DWORD Ammo;
+        void* InventoryItem;
+    };
+
+    class InventoryAmmo
+    {
+    public:
+        char pad_0000[0x40];
+        Engine::List<Inventory> InventoryList;
+    };
+
+    class InventoryContainerDI
+    {
+    public:
+        char pad_0000[0x48];
+        class InventoryAmmo* InventoryAmmo_;
+    };
+
     class PlayerDI
     {
     public:
@@ -32,6 +54,11 @@ namespace Engine
         float MaxHealth; //0x1208
 
         // Functions
+
+        InventoryContainerDI* GetInventoryContainerDI()
+        {
+            return  *reinterpret_cast<InventoryContainerDI**>((DWORD64)this + 0x8E0);
+        }
 
         Vec3 GetPos()
         {
@@ -59,7 +86,7 @@ namespace Engine
     class GameDI
     {
     public:
-        char _pad[0x5A0];
+        char _pad[0x540];
         SessionCooperativeDI* Session_;
     };
 
@@ -76,8 +103,7 @@ namespace Engine
             static CGame* pCGame = nullptr;
             if (pCGame == nullptr)
             {
-                DWORD64 FunctionAddress = (DWORD64)GetProcAddress((HMODULE)pGameData->Module_Engine, "CreateGame");
-                pCGame = *reinterpret_cast<CGame**>(FunctionAddress + Offset::CGame);
+                pCGame = *reinterpret_cast<CGame**>(pGameData->Module_Engine + Offset::CGame);
             }
             return pCGame;
         }
