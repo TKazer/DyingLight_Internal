@@ -28,6 +28,12 @@
     <Filter Include="Others">
       <UniqueIdentifier>{ce447ff2-b4b4-4aa4-b95f-7a754f9c45a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Feature">
+      <UniqueIdentifier>{e1155f75-3d57-4763-b63e-f8a20a44cd64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{3687f6d9-614c-433f-be85-c57ee7150f83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -96,9 +102,6 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="Engine.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Offset.h">
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="Bone.h">
@@ -176,9 +179,6 @@
     <ClInclude Include="Struct.h">
       <Filter>Others</Filter>
     </ClInclude>
-    <ClInclude Include="MenuConfig.h">
-      <Filter>Others</Filter>
-    </ClInclude>
     <ClInclude Include="Function.h">
       <Filter>Others</Filter>
     </ClInclude>
@@ -188,17 +188,29 @@
     <ClInclude Include="Render.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="MenuBase.hpp">
-      <Filter>Others</Filter>
-    </ClInclude>
-    <ClInclude Include="Menu.hpp">
-      <Filter>Others</Filter>
-    </ClInclude>
     <ClInclude Include="Memory.h">
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="Debug.hpp">
       <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuBase.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuConfig.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Offset.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="VEH.hpp">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="MemorySearch.hpp">
+      <Filter>Feature</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
