@@ -8,6 +8,7 @@
 #include "Render.h"
 #include "Menu.hpp"
 #include "Memory.h"
+#include "VEH.hpp"
 
 void Main()
 {
@@ -15,11 +16,15 @@ void Main()
     {
         delete pGame;
         delete pGameData;
-
-        if (Memory::LockHealthFlag)
-            Memory::UnLockHealth();
+        
         if (Memory::BulletLockFlag)
             Memory::UnLockBullet();
+        if (Memory::BulletTrackFlag)
+            Memory::UnHookBulletTrack();
+        if (Debug::hHandler)
+            RemoveVectoredExceptionHandler(Debug::hHandler);
+        //if (Memory::LockHealthFlag)
+        //    Memory::UnLockHealth();
 
         FreeConsole();
         imgui_hook::get().End();
@@ -34,15 +39,17 @@ void Main()
     if (!pGame->pLevelDI->Level->ModelList.Size())
         return;
 
-    //Memory::Enable();
+    Engine::CameraFPPDI* Camera = pGame->pCameraManage->Camera;
+    Engine::PlayerDI* LocalPlayer = pGame->pLocalClientDI->Player;
+
     // 锁血
-    if (MenuConfig::LockHealth)
+    /*if (MenuConfig::LockHealth)
     {
+        pGame->pLocalClientDI->Player->CurrentHealth = 200;
         if (Memory::LockHealthFlag == false)
         {
             Memory::LockHealthFlag = true;
             Memory::LockHealth();
-;           pGame->pLocalClientDI->Player->CurrentHealth = 200;
         }
     }
     else
@@ -53,11 +60,12 @@ void Main()
             Memory::UnLockHealth();
             pGame->pLocalClientDI->Player->CurrentHealth = pGame->pLocalClientDI->Player->MaxHealth;
         }
-    }
+    }*/
 
     // 锁子弹
     if (MenuConfig::LockBullet)
     {
+        Memory::SetAmmo(LocalPlayer->GetInventoryContainerDI(), 999);
         if (Memory::BulletLockFlag == false)
         {
             Memory::BulletLockFlag = true;
@@ -83,21 +91,39 @@ void Main()
     //}
 
     // 加速
-    if (MenuConfig::SpeedUp)
+    //if (MenuConfig::SpeedUp)
+    //{
+    //    static bool SpeedUpFlag = false;
+    //    if (GetAsyncKeyState(VK_LSHIFT))
+    //    {
+    //        SpeedUpFlag = true;
+    //        Memory::SpeedUp(MenuConfig::SpeedNum);
+    //    }
+    //    else
+    //    {
+    //        if (SpeedUpFlag)
+    //        {
+    //            SpeedUpFlag = false;
+    //            Memory::SpeedUp(1);
+    //        }
+    //    }
+    //}
+
+    // 子弹追踪
+    if (MenuConfig::AimType == 1)
     {
-        static bool SpeedUpFlag = false;
-        if (GetAsyncKeyState(VK_LSHIFT))
+        if (Memory::BulletTrackFlag == false)
         {
-            SpeedUpFlag = true;
-            Memory::SpeedUp(MenuConfig::SpeedNum);
+            Memory::BulletTrackFlag = true;
+            Memory::InitBulletTrackHook();
         }
-        else
+    }
+    else
+    {
+        if (Memory::BulletTrackFlag)
         {
-            if (SpeedUpFlag)
-            {
-                SpeedUpFlag = false;
-                Memory::SpeedUp(1);
-            }
+            Memory::BulletTrackFlag = false;
+            Memory::UnHookBulletTrack();
         }
     }
 
@@ -107,11 +133,8 @@ void Main()
         Memory::SetTime(MenuConfig::Time);
     }
 
-    Engine::CameraFPPDI* Camera = pGame->pCameraManage->Camera;
-    Engine::PlayerDI* LocalPlayer = pGame->pLocalClientDI->Player;
-
     // 自瞄选项
-    Vec3 AimPos;
+    Vec3 AimPos{ 0.f,0.f,0.f };
     float AimPosDistoLocal = INT_MAX;
 
     for (int i = 0; i < pGame->pLevelDI->Level->ModelList.Size(); i++)
@@ -132,7 +155,7 @@ void Main()
         if (!Camera->WorldToScreen(HeadPos, HeadScreenPos))
             continue;
 
-        HeadPosVisible = Obj.ModelObj->Model->IsVisible(Camera->GetPosition(), HeadPos);
+        //HeadPosVisible = Obj.ModelObj->Model->IsVisible(Camera->GetPosition(), HeadPos);
 
         // 调试信息
         if (MenuConfig::DebugText)
@@ -152,7 +175,7 @@ void Main()
         // 自瞄选择
         if (Obj.Type != 2)
         {
-            if (HeadPosVisible)
+            //if (HeadPosVisible)
             {
                 if (Distance < AimPosDistoLocal)
                 {
@@ -174,7 +197,7 @@ void Main()
             Render::DrawLosLine(Obj, MenuConfig::LosLineLength, ImColor(255, 255, 0, 255), 1);
         }
 
-        Gui.Line({(float)pGame->pCGame->WindowWidth/2,(float)pGame->pCGame->WindowHeight },HeadScreenPos,ImColor(255,255,0,255),1);
+        //Gui.Line({(float)pGame->pCGame->WindowWidth/2,(float)pGame->pCGame->WindowHeight },HeadScreenPos,ImColor(255,255,0,255),1);
 
         // 骨骼
         Render::DrawBone(Obj, ImColor(Gui.Color(MenuConfig::BoneColor)), 1, MenuConfig::Bone);
@@ -213,8 +236,19 @@ void Main()
 
     if (MenuConfig::AimBot)
     {
-        if(GetAsyncKeyState(AimControl::HotKey))
-            AimControl::AimBot(AimPos, Camera->GetPosition(), LocalPlayer->Yaw, LocalPlayer->Pitch);
+        if (GetAsyncKeyState(AimControl::HotKey))
+        {
+            switch (MenuConfig::AimType)
+            {
+            case 0:
+                AimControl::AimBot(AimPos, Camera->GetPosition(), LocalPlayer->Yaw, LocalPlayer->Pitch);
+                break;
+            case 1:
+                Memory::SetBulletTrackPos(AimPos);
+                break;
+            default:break;
+            }
+        }
     }
 
     // Object数量
@@ -224,23 +258,39 @@ void Main()
 
 }
 
+DWORD WINAPI EntryThread(LPVOID lp)
+{
+    pGameData = new GameData;
+    pGame = new Game;
+
+    // 初始化偏移
+    if (!pGameData->InitOffsets())
+    {
+        Debug::Log("InitOffsets() failed.\nPressing [END] to exit.");
+        while (true)
+        {
+            if (GetAsyncKeyState(VK_END))
+                break;
+        }
+        FreeConsole();
+        FreeLibraryAndExitThread((HMODULE)lp, 0);
+        return 0;
+    }
+
+    // 全局奔溃异常处理器
+    Debug::hHandler = (HANDLE)AddVectoredExceptionHandler(1, Debug::Exception);
+
+    imgui_hook::get().SetFont("C:\\Windows\\Fonts\\msyh.ttc", 15, false);
+    imgui_hook::get().Begin("Menu", (HMODULE)lp, Main, DXTYPE::AUTO);
+    return 0;
+}
+
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)
 {
     if (ul_reason_for_call == DLL_PROCESS_ATTACH)
     {
-        // 初始化控制台
-        AllocConsole();
-        freopen_s((FILE**)stdout, "conout$", "w", stdout);
-        freopen_s((FILE**)stdin, "conin$", "r", stdin);
-
-        pGameData = new GameData;
-        pGame = new Game;
-
-        // 奔溃异常处理器
-        AddVectoredExceptionHandler(1, Debug);
-
-        imgui_hook::get().SetFont("C:\\Windows\\Fonts\\msyh.ttc", 15, false);
-        imgui_hook::get().Begin("Menu", hModule, Main, DXTYPE::AUTO);
+        DisableThreadLibraryCalls(hModule);
+        CreateThread(NULL, 0, EntryThread, hModule, NULL, NULL);
     }
     return TRUE;
 }
